@@ -8,9 +8,7 @@ def initialize(name)
 end
 
 def self.all
-  @@all.each do |dog|
-    puts dog.name
-  end
+    puts @@all.collect {|dog| dog.name}
 end
 
 def self.clear_all
